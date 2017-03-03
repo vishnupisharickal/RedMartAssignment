@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		889046A01E693F8800A4107E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8890469F1E693F8800A4107E /* AppDelegate.swift */; };
+		889046A21E693F8800A4107E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889046A11E693F8800A4107E /* ViewController.swift */; };
+		889046A51E693F8800A4107E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889046A31E693F8800A4107E /* Main.storyboard */; };
+		889046A71E693F8800A4107E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 889046A61E693F8800A4107E /* Assets.xcassets */; };
+		889046AA1E693F8800A4107E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889046A81E693F8800A4107E /* LaunchScreen.storyboard */; };
+		889046B51E693F8800A4107E /* RedMartAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889046B41E693F8800A4107E /* RedMartAssignmentTests.swift */; };
+		889046C01E693F8800A4107E /* RedMartAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889046BF1E693F8800A4107E /* RedMartAssignmentUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		889046B11E693F8800A4107E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 889046941E693F8800A4107E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8890469B1E693F8800A4107E;
+			remoteInfo = RedMartAssignment;
+		};
+		889046BC1E693F8800A4107E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 889046941E693F8800A4107E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8890469B1E693F8800A4107E;
+			remoteInfo = RedMartAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8890469C1E693F8800A4107E /* RedMartAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedMartAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8890469F1E693F8800A4107E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		889046A11E693F8800A4107E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		889046A41E693F8800A4107E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		889046A61E693F8800A4107E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		889046A91E693F8800A4107E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		889046AB1E693F8800A4107E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		889046B01E693F8800A4107E /* RedMartAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedMartAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		889046B41E693F8800A4107E /* RedMartAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedMartAssignmentTests.swift; sourceTree = "<group>"; };
+		889046B61E693F8800A4107E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		889046BB1E693F8800A4107E /* RedMartAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedMartAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		889046BF1E693F8800A4107E /* RedMartAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedMartAssignmentUITests.swift; sourceTree = "<group>"; };
+		889046C11E693F8800A4107E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		889046991E693F8800A4107E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		889046AD1E693F8800A4107E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		889046B81E693F8800A4107E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		889046931E693F8800A4107E = {
+			isa = PBXGroup;
+			children = (
+				8890469E1E693F8800A4107E /* RedMartAssignment */,
+				889046B31E693F8800A4107E /* RedMartAssignmentTests */,
+				889046BE1E693F8800A4107E /* RedMartAssignmentUITests */,
+				8890469D1E693F8800A4107E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8890469D1E693F8800A4107E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8890469C1E693F8800A4107E /* RedMartAssignment.app */,
+				889046B01E693F8800A4107E /* RedMartAssignmentTests.xctest */,
+				889046BB1E693F8800A4107E /* RedMartAssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8890469E1E693F8800A4107E /* RedMartAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				8890469F1E693F8800A4107E /* AppDelegate.swift */,
+				889046A11E693F8800A4107E /* ViewController.swift */,
+				889046A31E693F8800A4107E /* Main.storyboard */,
+				889046A61E693F8800A4107E /* Assets.xcassets */,
+				889046A81E693F8800A4107E /* LaunchScreen.storyboard */,
+				889046AB1E693F8800A4107E /* Info.plist */,
+			);
+			path = RedMartAssignment;
+			sourceTree = "<group>";
+		};
+		889046B31E693F8800A4107E /* RedMartAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				889046B41E693F8800A4107E /* RedMartAssignmentTests.swift */,
+				889046B61E693F8800A4107E /* Info.plist */,
+			);
+			path = RedMartAssignmentTests;
+			sourceTree = "<group>";
+		};
+		889046BE1E693F8800A4107E /* RedMartAssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				889046BF1E693F8800A4107E /* RedMartAssignmentUITests.swift */,
+				889046C11E693F8800A4107E /* Info.plist */,
+			);
+			path = RedMartAssignmentUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8890469B1E693F8800A4107E /* RedMartAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 889046C41E693F8800A4107E /* Build configuration list for PBXNativeTarget "RedMartAssignment" */;
+			buildPhases = (
+				889046981E693F8800A4107E /* Sources */,
+				889046991E693F8800A4107E /* Frameworks */,
+				8890469A1E693F8800A4107E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedMartAssignment;
+			productName = RedMartAssignment;
+			productReference = 8890469C1E693F8800A4107E /* RedMartAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		889046AF1E693F8800A4107E /* RedMartAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 889046C71E693F8800A4107E /* Build configuration list for PBXNativeTarget "RedMartAssignmentTests" */;
+			buildPhases = (
+				889046AC1E693F8800A4107E /* Sources */,
+				889046AD1E693F8800A4107E /* Frameworks */,
+				889046AE1E693F8800A4107E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				889046B21E693F8800A4107E /* PBXTargetDependency */,
+			);
+			name = RedMartAssignmentTests;
+			productName = RedMartAssignmentTests;
+			productReference = 889046B01E693F8800A4107E /* RedMartAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		889046BA1E693F8800A4107E /* RedMartAssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 889046CA1E693F8800A4107E /* Build configuration list for PBXNativeTarget "RedMartAssignmentUITests" */;
+			buildPhases = (
+				889046B71E693F8800A4107E /* Sources */,
+				889046B81E693F8800A4107E /* Frameworks */,
+				889046B91E693F8800A4107E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				889046BD1E693F8800A4107E /* PBXTargetDependency */,
+			);
+			name = RedMartAssignmentUITests;
+			productName = RedMartAssignmentUITests;
+			productReference = 889046BB1E693F8800A4107E /* RedMartAssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		889046941E693F8800A4107E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = MyCompany;
+				TargetAttributes = {
+					8890469B1E693F8800A4107E = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					889046AF1E693F8800A4107E = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8890469B1E693F8800A4107E;
+					};
+					889046BA1E693F8800A4107E = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8890469B1E693F8800A4107E;
+					};
+				};
+			};
+			buildConfigurationList = 889046971E693F8800A4107E /* Build configuration list for PBXProject "RedMartAssignment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 889046931E693F8800A4107E;
+			productRefGroup = 8890469D1E693F8800A4107E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8890469B1E693F8800A4107E /* RedMartAssignment */,
+				889046AF1E693F8800A4107E /* RedMartAssignmentTests */,
+				889046BA1E693F8800A4107E /* RedMartAssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8890469A1E693F8800A4107E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				889046AA1E693F8800A4107E /* LaunchScreen.storyboard in Resources */,
+				889046A71E693F8800A4107E /* Assets.xcassets in Resources */,
+				889046A51E693F8800A4107E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		889046AE1E693F8800A4107E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		889046B91E693F8800A4107E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		889046981E693F8800A4107E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				889046A21E693F8800A4107E /* ViewController.swift in Sources */,
+				889046A01E693F8800A4107E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		889046AC1E693F8800A4107E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				889046B51E693F8800A4107E /* RedMartAssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		889046B71E693F8800A4107E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				889046C01E693F8800A4107E /* RedMartAssignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		889046B21E693F8800A4107E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8890469B1E693F8800A4107E /* RedMartAssignment */;
+			targetProxy = 889046B11E693F8800A4107E /* PBXContainerItemProxy */;
+		};
+		889046BD1E693F8800A4107E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8890469B1E693F8800A4107E /* RedMartAssignment */;
+			targetProxy = 889046BC1E693F8800A4107E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		889046A31E693F8800A4107E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				889046A41E693F8800A4107E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		889046A81E693F8800A4107E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				889046A91E693F8800A4107E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		889046C21E693F8800A4107E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		889046C31E693F8800A4107E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		889046C51E693F8800A4107E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RedMartAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-MyCompany.RedMartAssignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		889046C61E693F8800A4107E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RedMartAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-MyCompany.RedMartAssignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		889046C81E693F8800A4107E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RedMartAssignmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-MyCompany.RedMartAssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedMartAssignment.app/RedMartAssignment";
+			};
+			name = Debug;
+		};
+		889046C91E693F8800A4107E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RedMartAssignmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-MyCompany.RedMartAssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedMartAssignment.app/RedMartAssignment";
+			};
+			name = Release;
+		};
+		889046CB1E693F8800A4107E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = RedMartAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-MyCompany.RedMartAssignmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RedMartAssignment;
+			};
+			name = Debug;
+		};
+		889046CC1E693F8800A4107E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = RedMartAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-MyCompany.RedMartAssignmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RedMartAssignment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		889046971E693F8800A4107E /* Build configuration list for PBXProject "RedMartAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				889046C21E693F8800A4107E /* Debug */,
+				889046C31E693F8800A4107E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		889046C41E693F8800A4107E /* Build configuration list for PBXNativeTarget "RedMartAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				889046C51E693F8800A4107E /* Debug */,
+				889046C61E693F8800A4107E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		889046C71E693F8800A4107E /* Build configuration list for PBXNativeTarget "RedMartAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				889046C81E693F8800A4107E /* Debug */,
+				889046C91E693F8800A4107E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		889046CA1E693F8800A4107E /* Build configuration list for PBXNativeTarget "RedMartAssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				889046CB1E693F8800A4107E /* Debug */,
+				889046CC1E693F8800A4107E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 889046941E693F8800A4107E /* Project object */;
+}
