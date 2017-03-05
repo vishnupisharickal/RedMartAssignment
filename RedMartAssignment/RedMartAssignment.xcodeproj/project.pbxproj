@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		889046A01E693F8800A4107E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8890469F1E693F8800A4107E /* AppDelegate.swift */; };
-		889046A21E693F8800A4107E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889046A11E693F8800A4107E /* ViewController.swift */; };
+		889046A21E693F8800A4107E /* ProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889046A11E693F8800A4107E /* ProductListVC.swift */; };
 		889046A51E693F8800A4107E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889046A31E693F8800A4107E /* Main.storyboard */; };
 		889046A71E693F8800A4107E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 889046A61E693F8800A4107E /* Assets.xcassets */; };
 		889046AA1E693F8800A4107E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889046A81E693F8800A4107E /* LaunchScreen.storyboard */; };
 		889046B51E693F8800A4107E /* RedMartAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889046B41E693F8800A4107E /* RedMartAssignmentTests.swift */; };
 		889046C01E693F8800A4107E /* RedMartAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889046BF1E693F8800A4107E /* RedMartAssignmentUITests.swift */; };
+		889046E81E69A18E00A4107E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 889046D91E69A14E00A4107E /* Alamofire.framework */; };
+		889046E91E69A18E00A4107E /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 889046D91E69A14E00A4107E /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		889046EF1E69A3AF00A4107E /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889046EE1E69A3AF00A4107E /* WebServiceManager.swift */; };
+		889046F11E69A79100A4107E /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889046F01E69A79100A4107E /* Page.swift */; };
+		889046F31E69AB0A00A4107E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889046F21E69AB0A00A4107E /* Product.swift */; };
+		889046F51E69AB8200A4107E /* ProductCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889046F41E69AB8200A4107E /* ProductCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +37,89 @@
 			remoteGlobalIDString = 8890469B1E693F8800A4107E;
 			remoteInfo = RedMartAssignment;
 		};
+		889046D81E69A14E00A4107E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 889046CD1E69A14D00A4107E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		889046DA1E69A14E00A4107E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 889046CD1E69A14D00A4107E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		889046DC1E69A14E00A4107E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 889046CD1E69A14D00A4107E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		889046DE1E69A14E00A4107E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 889046CD1E69A14D00A4107E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		889046E01E69A14E00A4107E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 889046CD1E69A14D00A4107E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		889046E21E69A14E00A4107E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 889046CD1E69A14D00A4107E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		889046E41E69A14E00A4107E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 889046CD1E69A14D00A4107E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		889046E61E69A17600A4107E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 889046CD1E69A14D00A4107E /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		889046EA1E69A18E00A4107E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 889046CD1E69A14D00A4107E /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		889046EC1E69A18E00A4107E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				889046E91E69A18E00A4107E /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8890469C1E693F8800A4107E /* RedMartAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedMartAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8890469F1E693F8800A4107E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		889046A11E693F8800A4107E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		889046A11E693F8800A4107E /* ProductListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListVC.swift; sourceTree = "<group>"; };
 		889046A41E693F8800A4107E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		889046A61E693F8800A4107E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		889046A91E693F8800A4107E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +130,11 @@
 		889046BB1E693F8800A4107E /* RedMartAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedMartAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		889046BF1E693F8800A4107E /* RedMartAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedMartAssignmentUITests.swift; sourceTree = "<group>"; };
 		889046C11E693F8800A4107E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		889046CD1E69A14D00A4107E /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "RedMartAssignment/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		889046EE1E69A3AF00A4107E /* WebServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
+		889046F01E69A79100A4107E /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		889046F21E69AB0A00A4107E /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		889046F41E69AB8200A4107E /* ProductCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				889046E81E69A18E00A4107E /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,9 +163,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8818AC9C1E6BDE1500512782 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				889046F41E69AB8200A4107E /* ProductCollection.swift */,
+				889046F21E69AB0A00A4107E /* Product.swift */,
+				889046F01E69A79100A4107E /* Page.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8818ACA41E6BDE3F00512782 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				889046A11E693F8800A4107E /* ProductListVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8818ACA51E6BDE4E00512782 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				889046A31E693F8800A4107E /* Main.storyboard */,
+				889046A81E693F8800A4107E /* LaunchScreen.storyboard */,
+				889046AB1E693F8800A4107E /* Info.plist */,
+				889046A61E693F8800A4107E /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		889046931E693F8800A4107E = {
 			isa = PBXGroup;
 			children = (
+				889046CD1E69A14D00A4107E /* Alamofire.xcodeproj */,
 				8890469E1E693F8800A4107E /* RedMartAssignment */,
 				889046B31E693F8800A4107E /* RedMartAssignmentTests */,
 				889046BE1E693F8800A4107E /* RedMartAssignmentUITests */,
@@ -97,12 +216,11 @@
 		8890469E1E693F8800A4107E /* RedMartAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				8818ACA41E6BDE3F00512782 /* Controller */,
+				8818AC9C1E6BDE1500512782 /* Model */,
+				889046ED1E69A37F00A4107E /* WebService */,
+				8818ACA51E6BDE4E00512782 /* Resources */,
 				8890469F1E693F8800A4107E /* AppDelegate.swift */,
-				889046A11E693F8800A4107E /* ViewController.swift */,
-				889046A31E693F8800A4107E /* Main.storyboard */,
-				889046A61E693F8800A4107E /* Assets.xcassets */,
-				889046A81E693F8800A4107E /* LaunchScreen.storyboard */,
-				889046AB1E693F8800A4107E /* Info.plist */,
 			);
 			path = RedMartAssignment;
 			sourceTree = "<group>";
@@ -125,6 +243,28 @@
 			path = RedMartAssignmentUITests;
 			sourceTree = "<group>";
 		};
+		889046CE1E69A14D00A4107E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				889046D91E69A14E00A4107E /* Alamofire.framework */,
+				889046DB1E69A14E00A4107E /* Alamofire iOS Tests.xctest */,
+				889046DD1E69A14E00A4107E /* Alamofire.framework */,
+				889046DF1E69A14E00A4107E /* Alamofire macOS Tests.xctest */,
+				889046E11E69A14E00A4107E /* Alamofire.framework */,
+				889046E31E69A14E00A4107E /* Alamofire tvOS Tests.xctest */,
+				889046E51E69A14E00A4107E /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		889046ED1E69A37F00A4107E /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				889046EE1E69A3AF00A4107E /* WebServiceManager.swift */,
+			);
+			name = WebService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +275,13 @@
 				889046981E693F8800A4107E /* Sources */,
 				889046991E693F8800A4107E /* Frameworks */,
 				8890469A1E693F8800A4107E /* Resources */,
+				889046EC1E69A18E00A4107E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				889046E71E69A17600A4107E /* PBXTargetDependency */,
+				889046EB1E69A18E00A4107E /* PBXTargetDependency */,
 			);
 			name = RedMartAssignment;
 			productName = RedMartAssignment;
@@ -218,6 +361,12 @@
 			mainGroup = 889046931E693F8800A4107E;
 			productRefGroup = 8890469D1E693F8800A4107E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 889046CE1E69A14D00A4107E /* Products */;
+					ProjectRef = 889046CD1E69A14D00A4107E /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8890469B1E693F8800A4107E /* RedMartAssignment */,
@@ -226,6 +375,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		889046D91E69A14E00A4107E /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 889046D81E69A14E00A4107E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889046DB1E69A14E00A4107E /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 889046DA1E69A14E00A4107E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889046DD1E69A14E00A4107E /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 889046DC1E69A14E00A4107E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889046DF1E69A14E00A4107E /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 889046DE1E69A14E00A4107E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889046E11E69A14E00A4107E /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 889046E01E69A14E00A4107E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889046E31E69A14E00A4107E /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 889046E21E69A14E00A4107E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889046E51E69A14E00A4107E /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 889046E41E69A14E00A4107E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8890469A1E693F8800A4107E /* Resources */ = {
@@ -259,8 +460,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				889046A21E693F8800A4107E /* ViewController.swift in Sources */,
+				889046A21E693F8800A4107E /* ProductListVC.swift in Sources */,
 				889046A01E693F8800A4107E /* AppDelegate.swift in Sources */,
+				889046F31E69AB0A00A4107E /* Product.swift in Sources */,
+				889046F11E69A79100A4107E /* Page.swift in Sources */,
+				889046EF1E69A3AF00A4107E /* WebServiceManager.swift in Sources */,
+				889046F51E69AB8200A4107E /* ProductCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +497,16 @@
 			isa = PBXTargetDependency;
 			target = 8890469B1E693F8800A4107E /* RedMartAssignment */;
 			targetProxy = 889046BC1E693F8800A4107E /* PBXContainerItemProxy */;
+		};
+		889046E71E69A17600A4107E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 889046E61E69A17600A4107E /* PBXContainerItemProxy */;
+		};
+		889046EB1E69A18E00A4107E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 889046EA1E69A18E00A4107E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -411,6 +626,7 @@
 		889046C51E693F8800A4107E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RedMartAssignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -423,6 +639,7 @@
 		889046C61E693F8800A4107E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RedMartAssignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -505,6 +722,7 @@
 				889046C61E693F8800A4107E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		889046C71E693F8800A4107E /* Build configuration list for PBXNativeTarget "RedMartAssignmentTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +731,7 @@
 				889046C91E693F8800A4107E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		889046CA1E693F8800A4107E /* Build configuration list for PBXNativeTarget "RedMartAssignmentUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +740,7 @@
 				889046CC1E693F8800A4107E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

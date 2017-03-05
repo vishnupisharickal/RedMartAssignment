@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ProductListVC.swift
 //  RedMartAssignment
 //
 //  Created by VISHNU on 03/03/17.
@@ -7,17 +7,20 @@
 //
 
 import UIKit
+import Alamofire
 
-class ViewController: UIViewController {
+class ProductListVC: UIViewController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
+        
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
 
 
