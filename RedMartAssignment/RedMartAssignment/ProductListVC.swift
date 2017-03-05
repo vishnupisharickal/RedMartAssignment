@@ -15,6 +15,10 @@ class ProductListVC: UIViewController {
         
         super.viewDidLoad()
         
+        WebServiceManager.shared().fetchProducts {(collection:ProductCollection?, error:Error?) -> Void in
+            
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

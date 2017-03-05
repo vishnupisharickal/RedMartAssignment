@@ -10,7 +10,7 @@ import UIKit
 
 class ProductCollection: NSObject {
 
-    var productList:[Product]?
-    var page: Page?
+    var productList = [Product]()
+    var page = Page()
     
 }

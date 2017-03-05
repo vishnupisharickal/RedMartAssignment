@@ -10,8 +10,7 @@ import UIKit
 
 class Page: NSObject {
 
-    var index: Int?
-    var itemCount: Int?
-    var hasNextPage: Bool?
+    var index: Int = 0
+    var size = 30
     
 }

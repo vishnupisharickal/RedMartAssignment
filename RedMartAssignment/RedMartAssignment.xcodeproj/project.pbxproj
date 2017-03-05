@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8818ACA71E6BE6D400512782 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8818ACA61E6BE6D400512782 /* SwiftyJSON.swift */; };
 		889046A01E693F8800A4107E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8890469F1E693F8800A4107E /* AppDelegate.swift */; };
 		889046A21E693F8800A4107E /* ProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889046A11E693F8800A4107E /* ProductListVC.swift */; };
 		889046A51E693F8800A4107E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889046A31E693F8800A4107E /* Main.storyboard */; };
@@ -117,6 +118,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8818ACA61E6BE6D400512782 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		8890469C1E693F8800A4107E /* RedMartAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedMartAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8890469F1E693F8800A4107E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		889046A11E693F8800A4107E /* ProductListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListVC.swift; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				889046EE1E69A3AF00A4107E /* WebServiceManager.swift */,
+				8818ACA61E6BE6D400512782 /* SwiftyJSON.swift */,
 			);
 			name = WebService;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				889046F31E69AB0A00A4107E /* Product.swift in Sources */,
 				889046F11E69A79100A4107E /* Page.swift in Sources */,
 				889046EF1E69A3AF00A4107E /* WebServiceManager.swift in Sources */,
+				8818ACA71E6BE6D400512782 /* SwiftyJSON.swift in Sources */,
 				889046F51E69AB8200A4107E /* ProductCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
