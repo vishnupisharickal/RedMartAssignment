@@ -11,6 +11,8 @@ import UIKit
 class ProductDetailsVC: UIViewController {
 
     var product: Product?
+
+    @IBOutlet weak var titleLabel: UILabel!
     
     //MARK: View life cycle
     
@@ -18,10 +20,16 @@ class ProductDetailsVC: UIViewController {
         
         super.viewDidLoad()
         
-        self.navigationItem.title = product?.title
+        self.titleLabel.text = product?.title
         
     }
 
+    @IBAction func backButtonTapped(_ sender: Any) {
+        
+        self.dismiss(animated: true, completion: nil)
+        
+    }
+   
     override func didReceiveMemoryWarning() {
         
         super.didReceiveMemoryWarning()
@@ -95,6 +103,22 @@ extension ProductDetailsVC: UITableViewDataSource, UITableViewDelegate {
             return 50.0
             
         }
+        
+    }
+    
+}
+
+extension ProductDetailsVC: UIViewControllerTransitioningDelegate {
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        return CustomDismiss()
+        
+    }
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        return CustomPresentation()
         
     }
     

@@ -125,7 +125,11 @@ extension ProductListVC: UICollectionViewDelegate, UICollectionViewDataSource {
         
         let productDetailsVC = self.storyboard?.instantiateViewController(withIdentifier: "ProductDetailsVC") as! ProductDetailsVC
         productDetailsVC.product = productCollection?.productList[indexPath.row]
-        self.navigationController?.pushViewController(productDetailsVC, animated: true)
+        productDetailsVC.transitioningDelegate = self
+        productDetailsVC.modalPresentationStyle = .custom
+        present(productDetailsVC, animated: true, completion: nil)
+        
+        //self.navigationController?.pushViewController(productDetailsVC, animated: true)
         
     }
     
@@ -164,4 +168,20 @@ extension ProductListVC: UICollectionViewDelegate, UICollectionViewDataSource {
     }
 
     
+}
+
+extension ProductListVC: UIViewControllerTransitioningDelegate {
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        return CustomDismiss()
+        
+    }
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        return CustomPresentation()
+        
+    }
+
 }
