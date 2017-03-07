@@ -9,13 +9,33 @@
 import UIKit
 import Alamofire
 
+
 class ProductListVC: UIViewController {
 
+    var productCollection: ProductCollection?
+    let productCellID = "ProductCell"
+    let footerHeight: CGFloat = 44.0
+    
+    var collectionFooterView: UIView?
+    
+    @IBOutlet weak var productListingCollectionView: UICollectionView!
+    
+    //MARK:View life cycle
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
+        productListingCollectionView.contentInset = UIEdgeInsets(top: 32.0, left: 0, bottom: 0, right: 0)
+
         WebServiceManager.shared().fetchProducts {(collection:ProductCollection?, error:Error?) -> Void in
+            
+            if nil != collection {
+                
+                self.productCollection = collection
+                self.productListingCollectionView.reloadData()
+                
+            }
             
         }
         
@@ -27,6 +47,117 @@ class ProductListVC: UIViewController {
 
     }
 
+    //MARK: Private methods
+    
+    func shouldLoadNewPage(_ indexPath : IndexPath) -> Bool {
+        
+        if (indexPath.row + 1 ==  productCollection?.productList.count) {
+            
+            return true
+            
+        }
+        
+        return false
+        
+    }
 
+    func setCollectionViewFooterLoadingIndicatorView(_ activityIndicator: Bool) -> () {
+        
+        if activityIndicator {
+            
+            let footerView = UIView(frame: CGRect(x: 0, y: productListingCollectionView.contentSize.height - footerHeight, width: productListingCollectionView.bounds.width, height: footerHeight))
+            footerView.backgroundColor = UIColor.clear
+            productListingCollectionView.addSubview(footerView)
+
+            let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+            activityIndicator.tintColor = UIColor.gray
+            activityIndicator.center = CGPoint(x:footerView.frame.size.width/2.0, y:footerView.frame.size.height/2.0)
+            activityIndicator.startAnimating()
+            footerView.addSubview(activityIndicator)
+
+            productListingCollectionView.contentInset = UIEdgeInsets(top: 4, left: 0, bottom: footerHeight, right: 0)
+            collectionFooterView = footerView
+
+
+        } else {
+            
+            if let _ = collectionFooterView?.superview {
+                
+                collectionFooterView?.removeFromSuperview()
+                collectionFooterView = nil
+                productListingCollectionView.contentInset = UIEdgeInsets(top: 16.0, left: 0, bottom: 0, right: 0)
+                
+            }
+            
+        }
+        
+    }
+    
 }
 
+//MARK:
+//MARK:Collectionview Datasources And Delegates
+//MARK:
+
+extension ProductListVC: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    //MARK:Collectionview datasources
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return (productCollection?.productList.count) ?? 0
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: productCellID, for: indexPath) as! ProductDetailsCollectionViewCell
+        cell.setupCellForProduct(product: (productCollection?.productList[indexPath.row])!)
+        
+        return cell
+        
+    }
+    
+    //MARK:Collectionview delegates
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        if shouldLoadNewPage(indexPath) {
+            
+            setCollectionViewFooterLoadingIndicatorView(true)
+            WebServiceManager.shared().fetchNextPageForProductCollection(productCollection!) {(collection, error) in
+                
+                self.setCollectionViewFooterLoadingIndicatorView(false)
+
+                if nil != collection {
+                    
+                    self.productCollection = collection
+                    self.productListingCollectionView.reloadData()
+                    
+                }
+                
+                
+            }
+            
+        }
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
+        
+        let numberOfCell: CGFloat = 3
+        let cellWidth = ((productListingCollectionView.bounds.size.width) / numberOfCell) - 8.0
+        return CGSize(width:cellWidth, height:cellWidth + (0.5 * cellWidth))
+        
+        
+    }
+
+    
+}
