@@ -15,6 +15,7 @@ class ProductListVC: UIViewController {
     var productCollection: ProductCollection?
     let productCellID = "ProductCell"
     let footerHeight: CGFloat = 44.0
+    let collectionViewTopSpaceInset: CGFloat = 16.0
     
     var collectionFooterView: UIView?
     
@@ -26,7 +27,7 @@ class ProductListVC: UIViewController {
         
         super.viewDidLoad()
         
-        productListingCollectionView.contentInset = UIEdgeInsets(top: 32.0, left: 0, bottom: 0, right: 0)
+        productListingCollectionView.contentInset = UIEdgeInsets(top: collectionViewTopSpaceInset, left: 0, bottom: 0, right: 0)
 
         WebServiceManager.shared().fetchProducts {(collection:ProductCollection?, error:Error?) -> Void in
             
@@ -75,7 +76,7 @@ class ProductListVC: UIViewController {
             activityIndicator.startAnimating()
             footerView.addSubview(activityIndicator)
 
-            productListingCollectionView.contentInset = UIEdgeInsets(top: 4, left: 0, bottom: footerHeight, right: 0)
+            productListingCollectionView.contentInset = UIEdgeInsets(top: collectionViewTopSpaceInset, left: 0, bottom: footerHeight, right: 0)
             collectionFooterView = footerView
 
 
@@ -85,7 +86,7 @@ class ProductListVC: UIViewController {
                 
                 collectionFooterView?.removeFromSuperview()
                 collectionFooterView = nil
-                productListingCollectionView.contentInset = UIEdgeInsets(top: 16.0, left: 0, bottom: 0, right: 0)
+                productListingCollectionView.contentInset = UIEdgeInsets(top: collectionViewTopSpaceInset, left: 0, bottom: 0, right: 0)
                 
             }
             
@@ -122,6 +123,9 @@ extension ProductListVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        let productDetailsVC = self.storyboard?.instantiateViewController(withIdentifier: "ProductDetailsVC") as! ProductDetailsVC
+        productDetailsVC.product = productCollection?.productList[indexPath.row]
+        self.navigationController?.pushViewController(productDetailsVC, animated: true)
         
     }
     

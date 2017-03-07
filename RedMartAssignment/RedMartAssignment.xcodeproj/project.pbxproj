@@ -23,6 +23,7 @@
 		889046F51E69AB8200A4107E /* ProductCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889046F41E69AB8200A4107E /* ProductCollection.swift */; };
 		889FFB7F1E6E72660051D0F3 /* ProductDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889FFB7E1E6E72660051D0F3 /* ProductDetailsCollectionViewCell.swift */; };
 		889FFB891E6E7A730051D0F3 /* UIImageView+LazyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889FFB881E6E7A730051D0F3 /* UIImageView+LazyLoader.swift */; };
+		889FFB981E6EA7BE0051D0F3 /* ProductDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889FFB971E6EA7BD0051D0F3 /* ProductDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +142,7 @@
 		889046F41E69AB8200A4107E /* ProductCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollection.swift; sourceTree = "<group>"; };
 		889FFB7E1E6E72660051D0F3 /* ProductDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
 		889FFB881E6E7A730051D0F3 /* UIImageView+LazyLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+LazyLoader.swift"; sourceTree = "<group>"; };
+		889FFB971E6EA7BD0051D0F3 /* ProductDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				889046A11E693F8800A4107E /* ProductListVC.swift */,
+				889FFB971E6EA7BD0051D0F3 /* ProductDetailsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				889046F11E69A79100A4107E /* Page.swift in Sources */,
 				889046EF1E69A3AF00A4107E /* WebServiceManager.swift in Sources */,
 				8818ACA71E6BE6D400512782 /* SwiftyJSON.swift in Sources */,
+				889FFB981E6EA7BE0051D0F3 /* ProductDetailsVC.swift in Sources */,
 				889046F51E69AB8200A4107E /* ProductCollection.swift in Sources */,
 				889FFB7F1E6E72660051D0F3 /* ProductDetailsCollectionViewCell.swift in Sources */,
 			);
