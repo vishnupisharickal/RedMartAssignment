@@ -16,7 +16,7 @@ class Product: NSObject {
     var title: String?
     var details: String?
     var coverImage:String?
-    var images: [String]?
+    var images = [String]()
     var lifeTime: String?
     var price: String?
     var stockStatus: Int?
@@ -41,7 +41,7 @@ class Product: NSObject {
         
         for image in imageList! {
         
-            images?.append(API.productImage.appending(image["name"].stringValue))
+            images.append(API.productImage.appending(image["name"].stringValue))
         }
         
     }
