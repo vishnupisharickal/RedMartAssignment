@@ -17,6 +17,7 @@ class ProductListVC: UIViewController {
     let collectionViewTopSpaceInset: CGFloat = 16.0
     var collectionFooterView: UIView?
     @IBOutlet weak var productListingCollectionView: UICollectionView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     //MARK:View life cycle
     
@@ -29,6 +30,8 @@ class ProductListVC: UIViewController {
         self.navigationItem.title = "Products"
         
         WebServiceManager.shared().fetchProducts {(collection:ProductCollection?, error:Error?) -> Void in
+            
+            self.activityIndicator.stopAnimating()
             
             if nil != collection {
                 
