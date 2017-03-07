@@ -121,7 +121,7 @@
         <!--Product DetailsVC-->
         <scene sceneID="812-aQ-6Rg">
             <objects>
-                <viewController storyboardIdentifier="ProductDetailsVC" id="652-UG-SQE" customClass="ProductDetailsVC" customModule="RedMartAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductDetailsVC" automaticallyAdjustsScrollViewInsets="NO" id="652-UG-SQE" customClass="ProductDetailsVC" customModule="RedMartAssignment" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Om-Gz-Tof"/>
                         <viewControllerLayoutGuide type="bottom" id="nB6-5d-8AZ"/>
@@ -184,19 +184,25 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MiX-lc-iBS">
-                                                    <rect key="frame" x="2" y="2" width="371" height="207"/>
-                                                </imageView>
+                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIa-mg-ttP">
+                                                    <rect key="frame" x="4" y="0.0" width="367" height="211"/>
+                                                </scrollView>
+                                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="vXG-RN-H8A">
+                                                    <rect key="frame" x="168" y="166" width="39" height="37"/>
+                                                </pageControl>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="MiX-lc-iBS" firstAttribute="leading" secondItem="uHJ-N0-pVz" secondAttribute="leading" constant="2" id="Osp-oV-v2s"/>
-                                                <constraint firstItem="MiX-lc-iBS" firstAttribute="top" secondItem="uHJ-N0-pVz" secondAttribute="top" constant="2" id="Zek-YQ-b24"/>
-                                                <constraint firstAttribute="trailing" secondItem="MiX-lc-iBS" secondAttribute="trailing" constant="2" id="aQ8-HG-7Pj"/>
-                                                <constraint firstAttribute="bottom" secondItem="MiX-lc-iBS" secondAttribute="bottom" constant="2" id="fwh-iW-Acu"/>
+                                                <constraint firstAttribute="trailing" secondItem="yIa-mg-ttP" secondAttribute="trailing" constant="4" id="2rg-36-dAX"/>
+                                                <constraint firstAttribute="bottom" secondItem="vXG-RN-H8A" secondAttribute="bottom" constant="8" id="Fgg-60-tSj"/>
+                                                <constraint firstItem="yIa-mg-ttP" firstAttribute="leading" secondItem="uHJ-N0-pVz" secondAttribute="leading" constant="4" id="I2Y-Ob-QZv"/>
+                                                <constraint firstItem="vXG-RN-H8A" firstAttribute="centerX" secondItem="uHJ-N0-pVz" secondAttribute="centerX" id="OdX-zt-yuX"/>
+                                                <constraint firstAttribute="bottom" secondItem="yIa-mg-ttP" secondAttribute="bottom" id="Zgc-c6-Yxt"/>
+                                                <constraint firstItem="yIa-mg-ttP" firstAttribute="top" secondItem="uHJ-N0-pVz" secondAttribute="top" id="cyU-KL-mks"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="productImageView" destination="MiX-lc-iBS" id="YZ1-QF-MyN"/>
+                                            <outlet property="pageControl" destination="vXG-RN-H8A" id="qNq-fu-CCE"/>
+                                            <outlet property="scrollView" destination="yIa-mg-ttP" id="zjI-GG-6dg"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductInfoTableViewCell" id="aoJ-3B-VlF" customClass="ProductInfoTableViewCell" customModule="RedMartAssignment" customModuleProvider="target">
