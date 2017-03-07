@@ -21,7 +21,7 @@ class ProductImagesTableViewCell: UITableViewCell {
 
     func setupCellFor(product: Product) {
     
-        productImageView.setImageFromURL(product.coverImage!, placeHolder: nil)
+        productImageView.setImageFromURL(product.coverImage!, placeHolder: "PlaceHolder")
         
     }
     

@@ -237,12 +237,12 @@
 		8890469E1E693F8800A4107E /* RedMartAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				889FFBAA1E6EE0E60051D0F3 /* Utility */,
 				8818ACA41E6BDE3F00512782 /* Controller */,
 				8818AC9C1E6BDE1500512782 /* Model */,
 				889FFB871E6E727F0051D0F3 /* Views */,
 				889046ED1E69A37F00A4107E /* WebService */,
 				8818ACA51E6BDE4E00512782 /* Resources */,
+				889FFBAA1E6EE0E60051D0F3 /* Utility */,
 				8890469F1E693F8800A4107E /* AppDelegate.swift */,
 			);
 			path = RedMartAssignment;
@@ -685,6 +685,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RedMartAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.-MyCompany.RedMartAssignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -698,6 +699,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RedMartAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.-MyCompany.RedMartAssignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";

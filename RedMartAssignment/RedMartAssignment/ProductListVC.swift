@@ -130,9 +130,7 @@ extension ProductListVC: UICollectionViewDelegate, UICollectionViewDataSource {
         productDetailsVC.transitioningDelegate = self
         productDetailsVC.modalPresentationStyle = .custom
         present(productDetailsVC, animated: true, completion: nil)
-        
-        //self.navigationController?.pushViewController(productDetailsVC, animated: true)
-        
+                
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
