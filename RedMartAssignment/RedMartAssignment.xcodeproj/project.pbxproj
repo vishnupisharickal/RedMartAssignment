@@ -29,6 +29,7 @@
 		889FFBA91E6ED8DF0051D0F3 /* ProductDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889FFBA81E6ED8DF0051D0F3 /* ProductDetailsTableViewCell.swift */; };
 		889FFBAD1E6EE10B0051D0F3 /* CustomPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889FFBAB1E6EE10B0051D0F3 /* CustomPresentation.swift */; };
 		889FFBAE1E6EE10B0051D0F3 /* CustomDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889FFBAC1E6EE10B0051D0F3 /* CustomDismiss.swift */; };
+		889FFBB01E6EE8EC0051D0F3 /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889FFBAF1E6EE8EC0051D0F3 /* UIColor+Custom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +154,7 @@
 		889FFBA81E6ED8DF0051D0F3 /* ProductDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		889FFBAB1E6EE10B0051D0F3 /* CustomPresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentation.swift; sourceTree = "<group>"; };
 		889FFBAC1E6EE10B0051D0F3 /* CustomDismiss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDismiss.swift; sourceTree = "<group>"; };
+		889FFBAF1E6EE8EC0051D0F3 /* UIColor+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Custom.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,7 +285,6 @@
 			children = (
 				889046EE1E69A3AF00A4107E /* WebServiceManager.swift */,
 				8818ACA61E6BE6D400512782 /* SwiftyJSON.swift */,
-				889FFB881E6E7A730051D0F3 /* UIImageView+LazyLoader.swift */,
 			);
 			name = WebService;
 			sourceTree = "<group>";
@@ -304,6 +305,8 @@
 			children = (
 				889FFBAB1E6EE10B0051D0F3 /* CustomPresentation.swift */,
 				889FFBAC1E6EE10B0051D0F3 /* CustomDismiss.swift */,
+				889FFBAF1E6EE8EC0051D0F3 /* UIColor+Custom.swift */,
+				889FFB881E6E7A730051D0F3 /* UIImageView+LazyLoader.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 			files = (
 				889046A21E693F8800A4107E /* ProductListVC.swift in Sources */,
 				889FFBAD1E6EE10B0051D0F3 /* CustomPresentation.swift in Sources */,
+				889FFBB01E6EE8EC0051D0F3 /* UIColor+Custom.swift in Sources */,
 				889046A01E693F8800A4107E /* AppDelegate.swift in Sources */,
 				889FFB891E6E7A730051D0F3 /* UIImageView+LazyLoader.swift in Sources */,
 				889046F31E69AB0A00A4107E /* Product.swift in Sources */,

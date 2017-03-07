@@ -12,6 +12,7 @@ class ProductDetailsVC: UIViewController {
 
     var product: Product?
 
+    @IBOutlet weak var topBarView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     
     //MARK: View life cycle
@@ -20,6 +21,7 @@ class ProductDetailsVC: UIViewController {
         
         super.viewDidLoad()
         
+        topBarView.backgroundColor = UIColor.navigationBarPinkRedColor()
         self.titleLabel.text = product?.title
         
     }

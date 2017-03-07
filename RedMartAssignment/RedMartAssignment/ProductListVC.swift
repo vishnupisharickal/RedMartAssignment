@@ -9,16 +9,13 @@
 import UIKit
 import Alamofire
 
-
 class ProductListVC: UIViewController {
 
     var productCollection: ProductCollection?
     let productCellID = "ProductCell"
     let footerHeight: CGFloat = 44.0
     let collectionViewTopSpaceInset: CGFloat = 16.0
-    
     var collectionFooterView: UIView?
-    
     @IBOutlet weak var productListingCollectionView: UICollectionView!
     
     //MARK:View life cycle
@@ -28,7 +25,9 @@ class ProductListVC: UIViewController {
         super.viewDidLoad()
         
         productListingCollectionView.contentInset = UIEdgeInsets(top: collectionViewTopSpaceInset, left: 0, bottom: 0, right: 0)
-
+        navigationController?.navigationBar.barTintColor = UIColor.navigationBarPinkRedColor()
+        self.navigationItem.title = "Products"
+        
         WebServiceManager.shared().fetchProducts {(collection:ProductCollection?, error:Error?) -> Void in
             
             if nil != collection {
